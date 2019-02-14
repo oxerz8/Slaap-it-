@@ -14,13 +14,9 @@ class Ball:
 		
 		if(self.xvel>0):
 			self.x+=self.xvel
-#			if self.x==490:
-#				self.xvel=-self.xvel
 
 		if(self.xvel<0):
 			self.x+=self.xvel
-#			if self.x==20:
-#				self.xvel=-self.xvel
 	
 		if(self.yvel>0):
 			self.y+=self.yvel
