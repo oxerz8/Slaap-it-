@@ -99,12 +99,28 @@ I WANT   :
 SO THAT  : 
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
+TYPE     : BUG 0 : UTORID (optional)
+NAME     : Find another name for the game cause it's weird
+OWNER    : 
+PRIORITY :
+ESTIMATE : 
+ISSUE    : Slaap it is inappropriate af but it's funny
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
 TYPE     : BUG 1 : UTORID
 NAME     : Collision Algorithm doesn't work properly
 OWNER    : 
 PRIORITY :
 ESTIMATE : 
 ISSUE    : Collision algorithm has been implemented but doesn't work and needs to be modified.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 2 : UTORID
+NAME     : Create a dotted line
+OWNER    : 
+PRIORITY :
+ESTIMATE : 
+ISSUE    : The line separating the screen into two is straight. It needs to be dotted.
 --------------------------------------------------------------------------
 
 # OMITTED USER STORIES/BUGS BELOW   ###########################################
