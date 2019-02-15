@@ -11,3 +11,5 @@ user.py
 person.py and computer.py are inherited from user.py
 user and paddle.py connected by a has a relationship.
 
+Instructions:
+Install pygame and run view.py to initiate the game. 
