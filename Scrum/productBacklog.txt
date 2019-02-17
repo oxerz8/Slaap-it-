@@ -24,14 +24,14 @@ I WANT   : SO THAT  : Be able to use the ball object in this game, and most
            importantly, be able to make the collision between ball and paddles
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-TYPE     : USER STORY 5 : UTORID
+TYPE     : USER STORY 5 : 
 NAME     : Implement the computer player algorithm
-OWNER    : 
+OWNER    : gandhipu
 PRIORITY :
 ESTIMATE : 
 AS A     : user
-I WANT   : 
-SO THAT  : 
+I WANT   : To make the computer paddle follow the movement of the ball
+SO THAT  : The computer paddle is able to hit the ball
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 TYPE     : USER STORY 6 : UTORID
