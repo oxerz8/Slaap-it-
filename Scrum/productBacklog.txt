@@ -19,6 +19,16 @@ I WANT   : To click on the buttons giving the game modes offered in the game and
 SO THAT  : I can start playing the game.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
+TYPE     : USER STORY 2 : khuran34 && liuling6(Lingxiao Liu)
+NAME     : Implement ball algorithm
+OWNER    : 
+PRIORITY :
+ESTIMATE : 
+AS A     : user
+I WANT   : SO THAT  : Be able to use the ball object in this game, and most 
+           importantly, be able to make the collision between ball and paddles
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
 TYPE     : USER STORY 5 : UTORID
 NAME     : Implement the computer player algorithm
 OWNER    : 
