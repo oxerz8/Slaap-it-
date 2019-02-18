@@ -20,11 +20,14 @@ class Controller:
 		
 		ball.ball_movement()
 		ball.collision(self.p1.paddle)
-		if mode == '1':
-			if !(self.p1):
-				ball.collision(self.p1.paddle)
-				self.p1.paddle_algo(self.p1.paddle, paddle, ball.y) 
-		if mode == '2':
+
+		if mode == '1': #mode is player vs computer
+			if(self.p1!=None): 
+				ball.collision(self.p2.paddle)
+				self.p1.paddle_algo(self.p1.paddle , key, self.p1.usernum)
+			if(self.p2!=None):
+				self.p2.paddle_algo(self.p2.paddle, ball.y)	
+		if mode == '2': #mode is player vs player
 			if(self.p2!=None): 
 				ball.collision(self.p2.paddle)
 				self.p1.paddle_algo(self.p1.paddle , key, self.p1.usernum)

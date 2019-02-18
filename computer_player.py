@@ -5,7 +5,8 @@ pygame.init()
 
 class Computer(User):
 
-	def __init__(self, name, usernum):
+	def __init__(self, name, usernum): assignment.
+1 point for a commit message that follows the guidelines discussed in class.
 		super().__init__(name,usernum)
 		self.name="Computer"
 		self.usernum=2
