@@ -6,13 +6,14 @@
 # Sprint 1 Backlog UserStories go below
 
 --------------------------------------------------------------------------
-TYPE     : USER STORY 2 : khuran34
+TYPE     : USER STORY 2 : khuran34 && lewis19971225(Lingxiao Liu)
 NAME     : Implement ball algorithm
 OWNER    : 
 PRIORITY :
 ESTIMATE : 
 AS A     : user
-I WANT   : SO THAT  : 
+I WANT   : SO THAT  : Be able to use the ball object in this game, and most 
+           importantly, be able to make the collision between ball and paddles
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
 TYPE     : USER STORY 3 : khuran34
