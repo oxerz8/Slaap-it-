@@ -13,6 +13,11 @@ class Computer(User):
 
 	
 	def paddle_algo(self, paddle, ball_y):
-		#need to implement
-		pass
-
+	""" Move self.paddle up or down based on the y-value of the ball.
+	The location is given by ball_y. 
+	This function returns void. 	
+	"""
+		if ball_y<self.paddle.y and self.paddle.y>self.paddle.vel:
+			self.paddle.y-=self.paddle.vel
+		elif ball_y>self.paddle.y and self.paddle.y<500-self.paddle.height-self.paddle.vel:
+			self.paddle.y+=self.paddle.vel
