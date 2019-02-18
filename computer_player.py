@@ -5,8 +5,7 @@ pygame.init()
 
 class Computer(User):
 
-	def __init__(self, name, usernum): assignment.
-1 point for a commit message that follows the guidelines discussed in class.
+	def __init__(self, name, usernum):
 		super().__init__(name,usernum)
 		self.name="Computer"
 		self.usernum=2
@@ -14,12 +13,6 @@ class Computer(User):
 
 	
 	def paddle_algo(self, paddle, ball_y):
-	""" Move self.paddle up or down based on the y-value of the ball.
-	The location is given by ball_y. 
-	This function returns void. 	
-	"""
-		if ball_y<self.paddle.y and self.paddle.y>self.paddle.vel:
-			self.paddle.y-=self.paddle.vel
-		elif ball_y>self.paddle.y and self.paddle.y<500-self.paddle.height-self.paddle.vel:
-			self.paddle.y+=self.paddle.vel
+		#need to implement
+		pass
 
