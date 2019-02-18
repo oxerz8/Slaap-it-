@@ -114,13 +114,13 @@ ISSUE    : Collision algorithm has been implemented but doesn't work and needs t
 --------------------------------------------------------------------------
 TYPE     : BUG 2 : UTORID
 NAME     : Create a dotted line
-OWNER    : Ashir Riaz
+OWNER    : Ashir Riaz 
 PRIORITY :
 ESTIMATE : 
 ISSUE    : The line separating the screen into two is straight. It needs to be dotted.
 --------------------------------------------------------------------------
 
-# OMITTED USER STORIES/BUGS BELOW   ###########################################
+# OMITTED USER STORIES/BUGS BELOW   ############################################
 
 # COMPLETED USER STORIES/BUGS BELOW ###########################################
 
