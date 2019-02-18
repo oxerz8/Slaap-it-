@@ -32,7 +32,7 @@ class Ball:
 	def collision(self, paddle):		#incomplete
 
 		if(paddle.x>250): 		
-			if(self.y in range(paddle.y,paddle.y+30)) and (self.x+self.radius==paddle.x-paddle.width):
+			if(self.y in range(paddle.y-30,paddle.y+30)) and (self.x+self.radius==paddle.x-paddle.width):
 				self.xvel=-self.xvel
 
 			if(self.y in range(paddle.y+30,paddle.y+60)) and (self.x+self.radius==paddle.x-paddle.width):

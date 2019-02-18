@@ -106,7 +106,7 @@ SO THAT  :
 --------------------------------------------------------------------------
 TYPE     : BUG 1 : UTORID
 NAME     : Collision Algorithm doesn't work properly
-OWNER    : 
+OWNER    : Ashir Riaz
 PRIORITY :
 ESTIMATE : 
 ISSUE    : Collision algorithm has been implemented but doesn't work and needs to be modified.
@@ -114,7 +114,7 @@ ISSUE    : Collision algorithm has been implemented but doesn't work and needs t
 --------------------------------------------------------------------------
 TYPE     : BUG 2 : UTORID
 NAME     : Create a dotted line
-OWNER    : 
+OWNER    : Ashir Riaz
 PRIORITY :
 ESTIMATE : 
 ISSUE    : The line separating the screen into two is straight. It needs to be dotted.
