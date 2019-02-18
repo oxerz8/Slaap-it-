@@ -1,3 +1,4 @@
+
 import pygame
 from paddle import Paddle
 
@@ -51,4 +52,4 @@ class Ball:
 			if(self.y in range(paddle.y+60,paddle.y+90)) and (self.x-self.radius==paddle.x+paddle.width):
 				self.xvel=-self.xvel
 
-
+
