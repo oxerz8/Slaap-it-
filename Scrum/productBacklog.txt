@@ -1,3 +1,131 @@
+
+# User Stories/Bugs (add as appropriate), modify at each Sprint Planning Meeting
+# If a USER STORY is large, break it into smaller user stories.
+
+
+--------------------------------------------------------------------------
+TYPE     : USER STORY 1 : UTORID
+NAME     : Create Main Menu
+OWNER    : pahorean
+PRIORITY :
+ESTIMATE : 
+AS A     : user
+I WANT   : To click on the buttons displaying the game modes offered in the game and play that mode, 
+	   or go to the instructions/setting page
+SO THAT  : I can start playing a chosen game mode, change settings, or view the instructions.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 2 : khuran34 && liuling6(Lingxiao Liu)
+NAME     : Implement ball algorithm
+OWNER    : 
+PRIORITY :
+ESTIMATE : 
+AS A     : user
+I WANT   : SO THAT  : Be able to use the ball object in this game, and most 
+           importantly, be able to make the collision between ball and paddles
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 5 : UTORID
+NAME     : Implement the computer player algorithm
+OWNER    : 
+PRIORITY :
+ESTIMATE : 
+AS A     : user
+I WANT   : 
+SO THAT  : 
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 6 : UTORID
+NAME     : Create player vs computer mode
+OWNER    : 
+PRIORITY :
+ESTIMATE : 
+AS A     : user
+I WANT   : 
+SO THAT  : 
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 7 : UTORID
+NAME     : Create Instructions and settings page
+OWNER    : 
+PRIORITY :
+ESTIMATE : 
+AS A     : user
+I WANT   : 
+SO THAT  : 
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 8 : UTORID
+NAME     : Button to enable and disable the music 
+OWNER    : 
+PRIORITY :
+ESTIMATE : 
+AS A     : user
+I WANT   : 
+SO THAT  : (needs to be available throughout the game)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 9 : UTORID
+NAME     : Powerups for Survival mode
+OWNER    : 
+PRIORITY :
+ESTIMATE : 
+AS A     : user
+I WANT   : 
+SO THAT  : 
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 10 : UTORID
+NAME     : Difficulty levels for survival mode
+OWNER    : 
+PRIORITY :
+ESTIMATE : 
+AS A     : user
+I WANT   : 
+SO THAT  : 
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 11 : UTORID
+NAME     : Highscore on Survival mode menu
+OWNER    : 
+PRIORITY :
+ESTIMATE : 
+AS A     : user
+I WANT   : 
+SO THAT  : 
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : USER STORY 12 : UTORID
+NAME     : Implement the Survival mode
+OWNER    : 
+PRIORITY :
+ESTIMATE : 
+AS A     : user
+I WANT   : 
+SO THAT  : 
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 1 : UTORID
+NAME     : Collision Algorithm doesn't work properly
+OWNER    : Ashir Riaz
+PRIORITY :
+ESTIMATE : 
+ISSUE    : Collision algorithm has been implemented but doesn't work and needs to be modified.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+TYPE     : BUG 2 : UTORID
+NAME     : Create a dotted line
+OWNER    : Ashir Riaz 
+PRIORITY : high
+ESTIMATE : 
+ISSUE    : The line separating the screen into two is straight. It needs to be dotted.
+--------------------------------------------------------------------------
+
+# OMITTED USER STORIES/BUGS BELOW   ############################################
+
+# COMPLETED USER STORIES/BUGS BELOW ###########################################
+
+
 # User Stories/Bugs (add as appropriate), modify at each Sprint Planning Meeting
 # If a USER STORY is large, break it into smaller user stories.
 
