@@ -15,6 +15,7 @@ The classic retro game Pong recreated using Pygame and python
 
 ### Controls:
 |Button|Action|
+|------|------|
 |Down key|Player 2 moves down|
 |Up key|Player 2 moves up|
 |W key|Player 1 moves up|
