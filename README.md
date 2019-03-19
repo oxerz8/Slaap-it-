@@ -38,6 +38,9 @@ To install pygame module run the follwing command:
 sudo apt-get install python-pygame
 ```
 ### Contributors:
-Add your name and contribution to the game
 Sidharth
+Lewis
+Anusha
+Pushti
+Ash
 ### License:
