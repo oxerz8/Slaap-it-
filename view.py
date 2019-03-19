@@ -57,7 +57,10 @@ def redraw_game():
         key = pygame.key.get_pressed()
         pygame.draw.circle(window, (0, 0, 255), (ball.x, ball.y), ball.radius,0)
         controller.update_info(window, key, ball, mode)
-        pygame.draw.line(window, (255, 255, 255),(250, 0),(250, 500),2)
+        i = 0
+        while i < 500:
+                pygame.draw.line(window, (255, 255, 255),(250, i),(250, i + 50),2)
+                i = i + 75
         pygame.display.update()
 
 while run:
