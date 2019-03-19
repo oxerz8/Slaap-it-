@@ -18,15 +18,11 @@ window.blit(title.render("Slaap It!", True, (255, 255, 255)), (120, 20))
 
 #Button Look
 button_text = pygame.font.SysFont("Arial", 30)
-menu_options = ["Single Player", "Two Player", "Survival Mode",
-                "Instructions", "High Scores", "Quit Game"]
+menu_options = ["Single Player", "Two Player", "Quit Game"]
 
 button1 = pygame.draw.rect(window, (255, 0, 0), (150, 130, 200, 50))
-button2 = pygame.draw.rect(window, (255, 69, 0), (150, 190, 200, 50))
-button3 = pygame.draw.rect(window, (238, 198, 0), (150, 250, 200, 50))
-button4 = pygame.draw.rect(window, (50, 205, 50), (150, 310, 200, 50))
-button5 = pygame.draw.rect(window, (0, 191, 255), (150, 370, 200, 50))
-button6 = pygame.draw.rect(window, (153, 50, 204), (150, 430, 200, 50))
+button2 = pygame.draw.rect(window, (0, 69, 255), (150, 190, 200, 50))
+button3 = pygame.draw.rect(window, (50, 255, 50), (150, 250, 200, 50))
 
 text_ypos = 135
 for option in menu_options:
@@ -51,17 +47,7 @@ while not run:
         elif clicked[0] and button2.collidepoint(mouse_pos):
                 mode = '2'
                 run = True
-        elif clicked[0] and button3.collidepoint(mouse_pos): 
-                mode = '3'
-                #TODO: Implement button when Survival Mode game mode is complete
-                pass
-        elif clicked[0] and button4.collidepoint(mouse_pos):
-                #TODO: Implement button when instructions have been written
-                pass
-        elif clicked[0] and button5.collidepoint(mouse_pos):
-                #TODO: Implement button when high scores have been implemented
-                pass
-        elif clicked[0] and button6.collidepoint(mouse_pos):
+        elif clicked[0] and button3.collidepoint(mouse_pos):
                 pygame.quit()
 
 
@@ -80,7 +66,6 @@ while run:
                 if event.type == pygame.QUIT:
                         run=False
         
-        #ball.ball_movement()
         redraw_game()
 
 pygame.quit()

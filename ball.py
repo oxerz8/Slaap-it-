@@ -4,7 +4,7 @@ from paddle import Paddle
 
 class Ball:
 	
-	def __init__(self, xvel=5,yvel=5):
+	def __init__(self, xvel=10,yvel=10):
 		self.x=250
 		self.y=450
 		self.radius=10

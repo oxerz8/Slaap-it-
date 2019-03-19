@@ -20,8 +20,8 @@ class Controller:
 		
 		ball.ball_movement()
 		ball.collision(self.p1.paddle)
+		ball.collision(self.p2.paddle)
 		if mode == '1': #mode is player vs computer
-<<<<<<< HEAD
 			if (self.p1!=None): 
 				ball.collision(self.p2.paddle)
 				self.p1.paddle_algo(self.p1.paddle , key, self.p1.usernum)
@@ -29,15 +29,6 @@ class Controller:
 			if (self.p2!=None):
 				self.p2.paddle_algo(self.p2.paddle, ball.y)
 				pygame.draw.rect(win, (225, 255, 0), (self.p2.paddle.x, self.p2.paddle.y, self.p2.paddle.width, self.p2.paddle.height))
-=======
-			if not(self.p1): 
-				ball.collision(self.p2.paddle)
-				self.p1.paddle_algo(self.p1.paddle , key, self.p1.usernum)
-				pygame.draw.rect(win, (255, 255, 0) , (self.p1.paddle.x, self.p1.paddle.y, self.p1.paddle.width, self.p1.paddle.height))		
-			if not(self.p2):
-				self.p2.paddle_algo(self.p2.paddle, ball.y)
-				pygame.draw.rect(win, (225, 255, 0) (self.p2.paddle.x, self.p2.paddle.y, self.p2.paddle.width, self.p2.paddle.height))
->>>>>>> 1d8668bfa0d89ed31e6a1f4f345298f26f6d7d9f
 		if mode == '2': #mode is player vs player
 			if(self.p1!=None): 
 				ball.collision(self.p1.paddle)
