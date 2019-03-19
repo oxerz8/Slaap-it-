@@ -7,6 +7,8 @@ Screenshots:
 
 ![alt text](https://github.com/oxerz8/Slaap-it-/blob/master/Screenshots/Screenshot%20from%202019-03-19%2013-15-36.png)
 
+![alt text](https://github.com/oxerz8/Slaap-it-/blob/master/Screenshots/Screenshot%20from%202019-03-19%2013-23-58.png)
+
 Game features:
 1 player vs Computer player mode
 2 player mode
