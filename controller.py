@@ -32,8 +32,11 @@ class Controller:
 		if mode == '2': #mode is player vs player
 			if(self.p1!=None): 
 				ball.collision(self.p1.paddle)
+				ball.collision(self.p2.paddle)
 				self.p1.paddle_algo(self.p1.paddle , key, self.p1.usernum)
 			if (self.p2):
+				ball.collision(self.p1.paddle)
+				ball.collision(self.p2.paddle)
 				self.p2.paddle_algo(self.p2.paddle , key, self.p2.usernum)
 			pygame.draw.rect(win, (255, 255, 0) , (self.p1.paddle.x, self.p1.paddle.y, self.p1.paddle.width, self.p1.paddle.height))		
 			if(self.p2): pygame.draw.rect(win, (255, 0, 0) , (self.p2.paddle.x, self.p2.paddle.y, self.p2.paddle.width, self.p2.paddle.height))		
