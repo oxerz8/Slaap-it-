@@ -44,3 +44,7 @@ Anusha
 Pushti
 Ash
 ### License:
+
+Built under GNU General Public License
+
+You can find a copy of the License at https://github.com/oxerz8/Slaap-it-/blob/master/LICENSE
