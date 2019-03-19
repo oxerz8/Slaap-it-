@@ -14,16 +14,11 @@ The classic retro game Pong recreated using Pygame and python
 2 player mode
 
 ### Controls:
-Button
-Action
-Down key
-Player 2 moves down
-Up key
-Player 2 moves up
-W key
-Player 1 moves up
-S key
-Player 1 moves down
+|Button|Action|
+|Down key|Player 2 moves down|
+|Up key|Player 2 moves up|
+|W key|Player 1 moves up|
+|S key|Player 1 moves down|
 
 ### Installation:
 #### For Windows:
