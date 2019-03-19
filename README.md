@@ -32,12 +32,15 @@ Player 1 moves down
 Python3 and pygame module are required to run this game.
 
 To install python3, run the following command:
+```
 sudo apt-get update
 sudo apt-get install python3
+```
 
 To install pygame module run the follwing command:
+```
 sudo apt-get install python-pygame
-
+```
 ### Contributors:
 Add your name and contribution to the game
 Sidharth
