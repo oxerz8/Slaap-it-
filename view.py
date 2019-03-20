@@ -11,14 +11,15 @@ run = False
 ball = Ball()
 controller = Controller(2)
 
+
+
 #Title
 title = pygame.font.SysFont("Verdana", 60)
 window.blit(title.render("Slaap It!", True, (255, 255, 255)), (120, 20))
 
-
 #Button Look
 button_text = pygame.font.SysFont("Arial", 30)
-menu_options = ["Single Player", "Two Player", "Quit Game"]
+menu_options = ["Single  Player", "  Two Player", "  Quit Game"]
 
 button1 = pygame.draw.rect(window, (255, 0, 0), (150, 130, 200, 50))
 button2 = pygame.draw.rect(window, (0, 69, 255), (150, 190, 200, 50))
@@ -31,11 +32,16 @@ for option in menu_options:
 
 pygame.display.update()
 
+#Scores
+score_text = pygame.font.SysFont("Verdana", 40)
+win_message = ""
+
+
 #Main Menu
 while not run:
         for event in pygame.event.get():
                 if event.type == pygame.QUIT:
-                        pygame.quit
+                        pygame.quit()
         
         mouse_pos = pygame.mouse.get_pos()
         clicked = pygame.mouse.get_pressed()
@@ -51,27 +57,59 @@ while not run:
                 pygame.quit()
 
 
+
 #Running Game
 def redraw_game():
         window.fill((0, 0, 0))
         key = pygame.key.get_pressed()
-        pygame.draw.circle(window, (0, 0, 255), (ball.x, ball.y), ball.radius,0)
-        controller.update_info(window, key, ball, mode)
-        i = 0
-        while i < 500:
-                pygame.draw.line(window, (255, 255, 255),(250, i),(250, i + 50),2)
-                i = i + 75
+        pygame.draw.circle(window, (0, 0, 255), (ball.x, ball.y), ball.radius, 0)
+
+        left_border = pygame.draw.rect(window, (0, 0, 0), (0, 0, 10, 500))
+        right_border = pygame.draw.rect(window, (0, 0, 0), (490, 0, 10, 500))
+        
+        controller.update_info(window, key, ball, mode, left_border, right_border)
+
+        window.blit(score_text.render(str(controller.p1.score), True, (255, 255, 255)), (125, 20))
+        window.blit(score_text.render(str(controller.p2.score), True, (255, 255, 255)), (375, 20))
+        
+        line_y_pos = 0
+        while line_y_pos < 500: #draw a dotted line
+                pygame.draw.line(window, (255, 255, 255),(250, line_y_pos),(250, line_y_pos + 50) , 2)
+                line_y_pos += 75
         pygame.display.update()
 
 while run:
-        pygame.time.delay(100)
+        pygame.time.delay(50)
         for event in pygame.event.get():
                 if event.type == pygame.QUIT:
-                        run=False
+                        pygame.quit()
         
         redraw_game()
 
-pygame.quit()
+        if (controller.p1.score >= 5):
+                win_message = "Player 1 won!"
+                run = False
+        elif (controller.p2.score >= 5):
+                win_message = "Player 2 won!"
+                run = False
+
+
+winner_text = pygame.font.SysFont("Verdana", 30)
+window.blit(winner_text.render(win_message, True, (0, 0, 255)), (150, 220))
+quit_button = pygame.draw.rect(window, (255, 0, 0), (150, 350, 190, 50))
+window.blit(button_text.render("Quit Game", True, (255, 255, 255)), (193, 350))
+pygame.display.update()
+
+while True:
+        for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                        pygame.quit()
+        
+        mouse_pos = pygame.mouse.get_pos()
+        clicked = pygame.mouse.get_pressed()
+
+        if clicked[0] and quit_button.collidepoint(mouse_pos):
+                pygame.quit()
 
 #all the data input needs to be done here in view. 
 

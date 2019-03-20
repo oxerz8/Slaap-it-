@@ -8,5 +8,7 @@ class Paddle:
 		self.width=width
 		self.height=height
 		self.vel=vel
-		self.points=0
+		
+
+	
 

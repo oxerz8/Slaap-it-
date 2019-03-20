@@ -13,4 +13,4 @@ class User:
 		pass
 
 	def update_score(self):
-		self.score+=1
+                self.score += 1
