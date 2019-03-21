@@ -13,15 +13,16 @@ class Computer(User):
 		self.score = 0
 
 	
-	def paddle_algo(self, paddle, ball_y):
-		""" Move self.paddle up or down based on the y-value of the ball.
+	def paddle_algo(self, paddle, ball_x, ball_y):
+		""" Move self.paddle up or down based on the y-value of the ball, if the ball is on the left side of the board.
 		The location is given by ball_y. 
 		This function returns void. 	
 		"""
-		if ball_y<self.paddle.y and self.paddle.y>self.paddle.vel:
-			self.paddle.y-=self.paddle.vel
-		elif ball_y>self.paddle.y and self.paddle.y<500-self.paddle.height-self.paddle.vel:
-			self.paddle.y+=self.paddle.vel
+		if ball_x >= 250:
+			if ball_y<self.paddle.y and self.paddle.y>self.paddle.vel:
+				self.paddle.y-=self.paddle.vel
+			elif ball_y>self.paddle.y and self.paddle.y<500-self.paddle.height-self.paddle.vel:
+				self.paddle.y+=self.paddle.vel
 
 	def update_score(self):
 		self.score += 1
