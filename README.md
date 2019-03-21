@@ -44,8 +44,12 @@ To install pygame module run the follwing command:
 ```
 sudo apt-get install python-pygame
 ```
-#Directory Structure:
+### Directory Structure:
 The code is designed and structed around MVC design pattern, and we made some changes on it.
+
+#### Major Classes:
+View: Handles main menu, runs and quits the game
+Controller: Updates the game components and the view
 
 ### Contributors:
 Sidharth
