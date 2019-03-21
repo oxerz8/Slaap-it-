@@ -39,7 +39,7 @@ sudo apt-get install python-pygame
 ```
 ### Contributors:
 Sidharth
-Lewis
+Lingxiao Liu
 Anusha
 Pushti
 Ash
