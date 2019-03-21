@@ -5,7 +5,7 @@ The classic retro game Pong recreated using Pygame and python
 
 ### Screenshots:
 
-![alt text](https://github.com/oxerz8/Slaap-it-/blob/master/Screenshots/Screenshot%20from%202019-03-19%2013-15-36.png)
+![alt text](https://github.com/oxerz8/Slaap-it-/blob/master/Screenshots/Screenshot%20from%202019-03-21%2018-07-04.png)
 
 ![alt text](https://github.com/oxerz8/Slaap-it-/blob/master/Screenshots/Screenshot%20from%202019-03-19%2013-23-58.png)
 
