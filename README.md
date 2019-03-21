@@ -44,19 +44,47 @@ To install pygame module run the follwing command:
 ```
 sudo apt-get install python-pygame
 ```
-### Directory Structure:
-The code is designed and structed around MVC design pattern, and we made some changes on it.
 
-#### Major Classes:
-View: Handles main menu, runs and quits the game
-Controller: Updates the game components and the view
+Clone the repo and run python
+```
+git clone https://github.com/oxerz8/Slaap-it-
+cd Slaap-it-/
+python3 view.py
+```
+
+## Project Directory and Code Structure:
+### Directory Structure
+All the code related to the game can be found in the main directory ```Slaap-it-/```. The code is designed using Model View Controller design and Strategy design pattern. This is done in order to expand the code if required and improves the clarity of the working of the game.
+
+### Code Structure
+
+- The file view.py contains the main loop which initializes and updates the game screen. It is also the View component of the MVC pattern.
+
+- The file controller.py contains the Controller component of the MVC pattern. It is responsible for sending all the data related to user input, paddle and ball initiation and game modes.
+
+- The files ball.py, user.py and paddle.py are the Model component of the MVC pattern and are responsible for initializing the ball, the user(s) and the paddle(s) for the game. Furthermore, user.py is a parent class for computer_player.py and computer_player.py and is designed around the Strategy design pattern.
+
+- The game is designed so that additional features are straightforward to add. 
+
+For example: 
+
+To add a new button "x_button" to the main menu, simply open view.py and add the following:
+```
+menu_options = ["Single  Player", "  Two Player", "  Quit Game", "x_button"]
+button_x = pygame.draw.rect(window, (2,5,100), (150, 310, 200, 50))
+```
 
 ### Contributors:
-Sidharth
-Lingxiao Liu
-Anusha
-Pushti
-Ash
+- Sidharth Khurana
+
+- Lingxiao Liu
+
+- Anusha Pahore
+
+- Pushti Gandhi
+
+- Ashir
+
 ### License:
 
 Built under GNU General Public License
