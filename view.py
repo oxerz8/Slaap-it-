@@ -9,7 +9,6 @@ pygame.display.set_caption("Slaap It!")
 run = False
 
 ball = Ball()
-controller = Controller(2)
 
 #Title
 title = pygame.font.SysFont("Verdana", 60)
@@ -46,10 +45,11 @@ while not run:
 
         if clicked[0] and button1.collidepoint(mouse_pos):
                 mode = '1'
-                #TODO: Implement button when Single Player game mode is complete
-                pass
+                controller = Controller(1);
+                run = True
         elif clicked[0] and button2.collidepoint(mouse_pos):
                 mode = '2'
+                controller = Controller(2);
                 run = True
         elif clicked[0] and button3.collidepoint(mouse_pos): 
                 mode = '3'

@@ -10,6 +10,7 @@ class Computer(User):
 		self.name="Computer"
 		self.usernum=2
 		self.paddle = Paddle(480,250)
+		self.score = 0
 
 	
 	def paddle_algo(self, paddle, ball_y):
@@ -21,3 +22,6 @@ class Computer(User):
 			self.paddle.y-=self.paddle.vel
 		elif ball_y>self.paddle.y and self.paddle.y<500-self.paddle.height-self.paddle.vel:
 			self.paddle.y+=self.paddle.vel
+
+	def update_score(self):
+		self.score += 1
