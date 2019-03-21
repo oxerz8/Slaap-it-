@@ -20,15 +20,18 @@ class Controller:
                 
                 ball.ball_movement()
                 ball.collision(self.p1.paddle)
-                ball.collision(self.p2.paddle)
                 if mode == '1': #mode is player vs computer
-                        if (self.p1!=None): 
-                                ball.collision(self.p2.paddle)
-                                self.p1.paddle_algo(self.p1.paddle , key, self.p1.usernum)
-                                pygame.draw.rect(win, (255, 255, 0) , (self.p1.paddle.x, self.p1.paddle.y, self.p1.paddle.width, self.p1.paddle.height))                
-                        if (self.p2!=None):
-                                self.p2.paddle_algo(self.p2.paddle, ball.y)
-                                pygame.draw.rect(win, (225, 255, 0), (self.p2.paddle.x, self.p2.paddle.y, self.p2.paddle.width, self.p2.paddle.height))
+                        ball.collision(self.c1.paddle)
+                        if (self.p1):
+                                ball.collision(self.p1.paddle)
+                                ball.collision(self.c1.paddle)
+                                self.p1.paddle_algo(self.p1.paddle , key, self.p1.usernum)    
+                        if (self.c1):
+                                ball.collision(self.p1.paddle)
+                                ball.collision(self.c1.paddle)
+                                self.c1.paddle_algo(self.c1.paddle, ball.x, ball.y)
+                       pygame.draw.rect(win, (255, 255, 0) , (self.p1.paddle.x, self.p1.paddle.y, self.p1.paddle.width, self.p1.paddle.height))
+                       if (self.c1) pygame.draw.rect(win, (225, 255, 0), (self.c1.paddle.x, self.c1.paddle.y, self.c1.paddle.width, self.c1.paddle.height))
                 if mode == '2': #mode is player vs player
                         if(self.p1!=None): 
                                 ball.collision(self.p1.paddle)
@@ -41,8 +44,10 @@ class Controller:
                         pygame.draw.rect(win, (255, 255, 0) , (self.p1.paddle.x, self.p1.paddle.y, self.p1.paddle.width, self.p1.paddle.height))                
                         if(self.p2): pygame.draw.rect(win, (255, 0, 0) , (self.p2.paddle.x, self.p2.paddle.y, self.p2.paddle.width, self.p2.paddle.height))
 
-                if (left_border.collidepoint(ball.x - ball.radius, ball.y)):
+                if (mode == '2' and left_border.collidepoint(ball.x - ball.radius, ball.y)):
                     self.p2.update_score()
+                elif (mode == '1' and left_border.collidepoint(ball.x - ball.radius, ball.y)):
+                    self.c1.update_score()
                 elif (right_border.collidepoint(ball.x + ball.radius, ball.y)):
                     self.p1.update_score()
 
