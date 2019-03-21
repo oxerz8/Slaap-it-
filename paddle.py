@@ -2,13 +2,18 @@ import pygame
 
 class Paddle:
 
-	def __init__(self, x, y, width=20,height=100,vel=10):
-		self.x=x
-		self.y=y
-		self.width=width
-		self.height=height
-		self.vel=vel
-		
+        def __init__(self, x, y, w = 10, h = 100, vel = 10):
+                '''Initialize a Paddle with upper-right corner
+                at position (x,y), width w, height h, and velocity vel'''
+                
+                self.x = x
+                self.y = y
+                self.width = w
+                self.height = h
+                self.vel = vel
 
-	
+                
+                
+
+        
 

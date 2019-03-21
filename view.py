@@ -1,6 +1,7 @@
 import pygame
 from ball import Ball
 from controller import Controller
+
 pygame.init()
 
 window = pygame.display.set_mode((500,500))
@@ -8,7 +9,8 @@ window = pygame.display.set_mode((500,500))
 pygame.display.set_caption("Slaap It!")
 run = False
 
-ball = Ball()
+ball = Ball((pygame.display.get_surface().get_width()//2),
+            (pygame.display.get_surface().get_height()//2))
 controller = Controller(2)
 
 
@@ -60,14 +62,13 @@ while not run:
 
 #Running Game
 def redraw_game():
+        '''Update the window to show the game's current state'''
+        
         window.fill((0, 0, 0))
         key = pygame.key.get_pressed()
         pygame.draw.circle(window, (0, 0, 255), (ball.x, ball.y), ball.radius, 0)
-
-        left_border = pygame.draw.rect(window, (0, 0, 0), (0, 0, 10, 500))
-        right_border = pygame.draw.rect(window, (0, 0, 0), (490, 0, 10, 500))
         
-        controller.update_info(window, key, ball, mode, left_border, right_border)
+        controller.update_info(window, key, ball, mode)
 
         window.blit(score_text.render(str(controller.p1.score), True, (255, 255, 255)), (125, 20))
         window.blit(score_text.render(str(controller.p2.score), True, (255, 255, 255)), (375, 20))
