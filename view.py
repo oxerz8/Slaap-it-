@@ -10,8 +10,6 @@ run = False
 
 ball = Ball()
 
-
-
 #Title
 title = pygame.font.SysFont("Verdana", 60)
 window.blit(title.render("Slaap It!", True, (255, 255, 255)), (120, 20))
@@ -70,7 +68,10 @@ def redraw_game():
         controller.update_info(window, key, ball, mode, left_border, right_border)
 
         window.blit(score_text.render(str(controller.p1.score), True, (255, 255, 255)), (125, 20))
-        window.blit(score_text.render(str(controller.p2.score), True, (255, 255, 255)), (375, 20))
+        if mode == '2':
+                window.blit(score_text.render(str(controller.p2.score), True, (255, 255, 255)), (375, 20))
+        elif mode == '1':
+                  window.blit(score_text.render(str(controller.c1.score), True, (255, 255, 255)), (375, 20))
         
         line_y_pos = 0
         while line_y_pos < 500: #draw a dotted line
@@ -89,10 +90,12 @@ while run:
         if (controller.p1.score >= 5):
                 win_message = "Player 1 won!"
                 run = False
-        elif (controller.p2.score >= 5):
+        elif (mode == '2' and controller.p2.score >= 5):
                 win_message = "Player 2 won!"
                 run = False
-
+        elif (mode == '1' and controller.c1.score >= 5):
+                win_message = "You lost"
+                run = False
 
 winner_text = pygame.font.SysFont("Verdana", 30)
 window.blit(winner_text.render(win_message, True, (0, 0, 255)), (150, 220))
