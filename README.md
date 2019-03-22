@@ -1,5 +1,5 @@
 # Slaap it!
-The classic retro Pong game recreated using Python
+The classic Pong game recreated using Python
 
 ## Index
 
@@ -9,15 +9,11 @@ The classic retro Pong game recreated using Python
 
 ![alt text](https://github.com/oxerz8/Slaap-it-/blob/master/Screenshots/Screenshot%20from%202019-03-21%2018-07-04.png)
 
-### Game features:
+### Game Features:
 - The start screen contains Single Player, Two Player and Quit Game buttons:
     - Click on the Single Player button to start playing the single player mode
     - Click on the Two Player button to start playing the two player mode
     - Click on Quit Game to close the game screen
-- The main game screen is of size 500 x 500:
-    - The players need to use their paddle to prevent the ball from colliding with the wall
-    - If a player misses the ball, the other player will get one point
-    - The first player to earn 5 points wins
 
 ### Controls:
 |Button|Action|
@@ -26,6 +22,12 @@ The classic retro Pong game recreated using Python
 |S key|Player 1 moves down|
 |Down key|Player 2 moves down|
 |Up key|Player 2 moves up|
+
+In Single Player mode, the player uses the Player 1 controls to move the left paddle.
+- Instructions:
+    - The players need to use their paddle to prevent the ball from colliding with the wall
+    - If a player misses the ball, the other player will get one point
+    - The first player to earn 5 points wins
 
 ### Installation:
 #### For Windows:
