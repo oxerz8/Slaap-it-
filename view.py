@@ -3,6 +3,10 @@ from ball import Ball
 from controller import Controller
 
 pygame.init()
+pygame.mixer.init()
+
+pygame.mixer.music.load("background_music.mp3") 
+pygame.mixer.music.play(-1)
 
 window = pygame.display.set_mode((500,500))
 
