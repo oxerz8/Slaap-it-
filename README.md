@@ -13,7 +13,6 @@ The classic Pong game recreated using Python
 - The start screen contains Single Player, Two Player and Quit Game buttons:
     - Click on the Single Player button to start playing the single player mode
     - Click on the Two Player button to start playing the two player mode
-    - Click on Quit Game to close the game screen
 
 ### Controls:
 |Button|Action|
@@ -71,7 +70,7 @@ All the code related to the game can be found in the main directory ```Slaap-it-
 
 For example: 
 
-To add a new button "x_button" to the main menu, simply open view.py and add the following code to Line 21:
+To add a new button "button_x" to the main menu, simply open view.py and add the following code to Line 21:
 ```
 menu_options = ["Single  Player", "  Two Player", "  Quit Game", "x_button"]
 button_x = pygame.draw.rect(window, (2,5,100), (150, 310, 200, 50))
