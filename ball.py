@@ -44,13 +44,13 @@ class Ball:
                 
                 if paddle.x > pygame.display.get_surface().get_width() // 2: #right paddle
                         if ((self.x + self.radius == paddle.x) and
-                            (self.y in range(paddle.y, paddle.y + paddle.height + 1))):
+                            (self.y in range(paddle.y - self.radius, paddle.y + paddle.height + self.radius))):
 
                             self.xvel = -self.xvel
 
                 else: #left paddle
                         if ((self.x - self.radius == paddle.x + paddle.width) and
-                            (self.y in range(paddle.y, paddle.y + paddle.height + 1))):
+                            (self.y in range(paddle.y - self.radius, paddle.y + paddle.height + self.radius))):
 
                             self.xvel = -self.xvel
                             

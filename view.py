@@ -69,10 +69,7 @@ def redraw_game():
         controller.update_info(window, key, ball, mode)
 
         window.blit(score_text.render(str(controller.p1.score), True, (255, 255, 255)), (125, 20))
-        if mode == '2':
-                window.blit(score_text.render(str(controller.p2.score), True, (255, 255, 255)), (375, 20))
-        elif mode == '1':
-                  window.blit(score_text.render(str(controller.c1.score), True, (255, 255, 255)), (375, 20))
+        window.blit(score_text.render(str(controller.p2.score), True, (255, 255, 255)), (375, 20))
         
         line_y_pos = 0
         while line_y_pos < 500: #draw a dotted line
@@ -94,8 +91,8 @@ while run:
         elif (mode == '2' and controller.p2.score >= 5):
                 win_message = "Player 2 won!"
                 run = False
-        elif (mode == '1' and controller.c1.score >= 5):
-                win_message = "You lost"
+        elif (mode == '1' and controller.p2.score >= 5):
+                win_message = "You  lost  :("
                 run = False
 
 winner_text = pygame.font.SysFont("Verdana", 30)
