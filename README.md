@@ -87,7 +87,7 @@ button_x = pygame.draw.rect(window, (2,5,100), (150, 310, 200, 50))
 
 - Pushti Gandhi
 
-
+This project was created as part of an assignment for the class CSC290 for the year 2019 at Univerisity of Toronto Mississauga.
 
 ### License:
 
